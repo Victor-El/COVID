@@ -13,14 +13,13 @@ class App: Application() {
         if (BuildConfig.DEBUG) {
             Timber.plant(object: Timber.DebugTree() {
                 override fun createStackElementTag(element: StackTraceElement): String? {
-                    // return super.createStackElementTag(element) // default impl
-                    return String.format(
-                        "File: %s \n Class: %s; Method: %s at Line: %s",
-                        element.fileName,
+                    return super.createStackElementTag(element) // default impl
+                    /*return String.format(
+                        "Class: %s; Method: %s at Line: %d",
                         element.className,
                         element.methodName,
                         element.lineNumber
-                    )
+                    )*/
                 }
             })
         } else {
