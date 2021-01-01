@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="me.codeenzyme.covid.views.fragments.HomeFragment"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/countryDetailFragment"
+        android:name="me.codeenzyme.covid.views.fragments.CountryDetailFragment"
+        android:label="CountryDetailFragment" />
+    <fragment
+        android:id="@+id/countriesListFragment"
+        android:name="me.codeenzyme.covid.views.fragments.CountriesListFragment"
+        android:label="Countries" >
+        <action
+            android:id="@+id/action_countriesListFragment_to_countryDetailFragment"
+            app:destination="@id/countryDetailFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" /><action android:id="@+id/action_global_countriesListFragment" app:destination="@id/countriesListFragment"/>
+</navigation>

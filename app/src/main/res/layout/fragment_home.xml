@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_swipe_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Affected countries"/>
+
+                    <TextView
+                        android:id="@+id/affected_countries_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Global Population"/>
+
+                    <TextView
+                        android:id="@+id/total_population_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Total Cases"/>
+
+                    <TextView
+                        android:id="@+id/total_cases_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Today Cases"/>
+
+                    <TextView
+                        android:id="@+id/today_cases_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Active Cases"/>
+
+                    <TextView
+                        android:id="@+id/active_cases_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Active per million"/>
+
+                    <TextView
+                        android:id="@+id/active_per_million_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Cases per million"/>
+
+                    <TextView
+                        android:id="@+id/cases_per_million_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Recovered"/>
+
+                    <TextView
+                        android:id="@+id/recovered_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Recovered Today"/>
+
+                    <TextView
+                        android:id="@+id/recovered_today_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Recovery per million"/>
+
+                    <TextView
+                        android:id="@+id/recovery_per_million"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Critical Cases"/>
+
+                    <TextView
+                        android:id="@+id/critical_cases_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Critical per million"/>
+
+                    <TextView
+                        android:id="@+id/critical_per_million_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Total Deaths"/>
+
+                    <TextView
+                        android:id="@+id/total_deaths_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Today's death"/>
+
+                    <TextView
+                        android:id="@+id/today_death_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Deaths per million"/>
+
+                    <TextView
+                        android:id="@+id/deaths_per_million_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Total Tests"/>
+
+                    <TextView
+                        android:id="@+id/total_tests_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/standard_padding"
+                app:cardBackgroundColor="?attr/colorPrimary"
+                app:cardElevation="@dimen/standard_card_elevation"
+                android:elevation="@dimen/standard_card_elevation"
+                app:cardCornerRadius="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimaryVariant"
+                        android:text="Tests per million"/>
+
+                    <TextView
+                        android:id="@+id/tests_per_million_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="30sp"
+                        android:textColor="?attr/colorOnPrimary"
+                        android:textStyle="bold"
+                        android:background="?attr/colorPrimary"
+                        android:text="100,000"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!--   Extra padding  -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/standard_padding"
+                android:padding="@dimen/standard_padding"
+                android:layout_margin="@dimen/standard_padding"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

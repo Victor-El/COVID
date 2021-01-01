@@ -9,7 +9,7 @@ import me.codeenzyme.covid.data.remote.CoronaService
 import javax.inject.Inject
 
 class GlobalStatRepository @Inject constructor(
-    val db: AppDatabase,
+    private val db: AppDatabase,
     private val coronaService: CoronaService,
 ) {
 
