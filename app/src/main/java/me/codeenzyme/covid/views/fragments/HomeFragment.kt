@@ -10,6 +10,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
+import me.codeenzyme.covid.R
+import me.codeenzyme.covid.data.local.entities.GlobalStat
 import me.codeenzyme.covid.databinding.FragmentHomeBinding
 import me.codeenzyme.covid.viewmodels.GlobalStatViewModel
 import timber.log.Timber
@@ -26,7 +28,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -45,34 +47,36 @@ class HomeFragment : Fragment() {
         lifecycleScope.launchWhenCreated {
             binding.homeSwipeRefresh.isRefreshing = true
 
-            globalStatViewModel.getGlobalStat().collect {
+            globalStatViewModel.getGlobalStat().collect {it: GlobalStat? ->
 
                 binding.run {
                     homeSwipeRefresh.isRefreshing = false
-                    affectedCountriesView.text = formatNumber(it.affectedCountries)
-                    totalPopulationView.text = formatNumber(it.population)
-                    totalCasesView.text = formatNumber(it.cases)
-                    todayCasesView.text = formatNumber(it.todayCases)
-                    activeCasesView.text = formatNumber(it.active)
-                    activePerMillionView.text = formatNumber(it.activePerOneMillion)
-                    casesPerMillionView.text = formatNumber(it.casesPerOneMillion)
-                    recoveredView.text = formatNumber(it.recovered)
-                    recoveredTodayView.text = formatNumber(it.todayRecovered)
-                    recoveryPerMillion.text = formatNumber(it.recoveredPerOneMillion)
-                    criticalCasesView.text = formatNumber(it.critical)
-                    criticalPerMillionView.text = formatNumber(it.criticalPerOneMillion)
-                    totalDeathsView.text = formatNumber(it.deaths)
-                    todayDeathView.text = formatNumber(it.todayDeaths)
-                    deathsPerMillionView.text = formatNumber(it.deathsPerOneMillion)
-                    totalTestsView.text = formatNumber(it.tests)
-                    testsPerMillionView.text = formatNumber(it.testsPerOneMillion)
+                    affectedCountriesView.text = formatNumber(it?.affectedCountries)
+                    totalPopulationView.text = formatNumber(it?.population)
+                    totalCasesView.text = formatNumber(it?.cases)
+                    todayCasesView.text = formatNumber(it?.todayCases)
+                    activeCasesView.text = formatNumber(it?.active)
+                    activePerMillionView.text = formatNumber(it?.activePerOneMillion)
+                    casesPerMillionView.text = formatNumber(it?.casesPerOneMillion)
+                    recoveredView.text = formatNumber(it?.recovered)
+                    recoveredTodayView.text = formatNumber(it?.todayRecovered)
+                    recoveryPerMillion.text = formatNumber(it?.recoveredPerOneMillion)
+                    criticalCasesView.text = formatNumber(it?.critical)
+                    criticalPerMillionView.text = formatNumber(it?.criticalPerOneMillion)
+                    totalDeathsView.text = formatNumber(it?.deaths)
+                    todayDeathView.text = formatNumber(it?.todayDeaths)
+                    deathsPerMillionView.text = formatNumber(it?.deathsPerOneMillion)
+                    totalTestsView.text = formatNumber(it?.tests)
+                    testsPerMillionView.text = formatNumber(it?.testsPerOneMillion)
                 }
             }
         }
     }
 
-    private fun formatNumber(num: Number): String {
-        return NumberFormat.getIntegerInstance().format(num)
+    private fun formatNumber(num: Number?): String {
+        return num?.let {
+            NumberFormat.getIntegerInstance().format(it)
+        } ?: getString(R.string.no_data_available)
     }
 
 }

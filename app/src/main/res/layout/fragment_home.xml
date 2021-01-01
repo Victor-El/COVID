@@ -51,7 +51,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -94,7 +94,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -137,7 +137,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -180,7 +180,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -223,7 +223,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -266,7 +266,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -309,7 +309,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -352,7 +352,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -395,7 +395,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -438,7 +438,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -481,7 +481,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -524,7 +524,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -567,7 +567,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -610,7 +610,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -653,7 +653,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -696,7 +696,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -739,7 +739,7 @@
                         android:textColor="?attr/colorOnPrimary"
                         android:textStyle="bold"
                         android:background="?attr/colorPrimary"
-                        android:text="100,000"/>
+                        android:text="@string/no_data_available"/>
 
                 </androidx.appcompat.widget.LinearLayoutCompat>
 
