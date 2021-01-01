@@ -34,6 +34,14 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.homeSwipeRefresh.setOnRefreshListener {
+            loadData()
+        }
+
+        loadData()
+    }
+
+    private fun loadData() {
         lifecycleScope.launchWhenCreated {
             binding.homeSwipeRefresh.isRefreshing = true
 
