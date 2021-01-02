@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">COVID</string>
     <string name="no_data_available">No data available</string>
+    <string name="cases">Cases: %1$s</string>
+    <string name="today_cases">Today cases: %1$s</string>
+    <string name="active_cases">Active cases: %1$s</string>
+    <string name="deaths">Deaths: %1$s</string>
+    <string name="today_deaths">Today deaths: %1$s</string>
 </resources>

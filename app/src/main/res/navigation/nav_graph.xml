@@ -19,5 +19,14 @@
             android:id="@+id/action_countriesListFragment_to_countryDetailFragment"
             app:destination="@id/countryDetailFragment" />
     </fragment>
-    <action android:id="@+id/action_global_homeFragment" app:destination="@id/homeFragment" /><action android:id="@+id/action_global_countriesListFragment" app:destination="@id/countriesListFragment"/>
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"/>
+    <action
+        android:id="@+id/action_global_countriesListFragment"
+        app:destination="@id/countriesListFragment"
+        app:popUpTo="@id/countriesListFragment"
+        app:popUpToInclusive="true" />
 </navigation>

@@ -79,4 +79,13 @@ class MainActivity : AppCompatActivity() {
             })
         }
     }
+
+    fun getViewBinding(): ActivityMainBinding {
+        return binding
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Timber.d("Back pressed in MainActivity")
+    }
 }

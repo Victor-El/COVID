@@ -60,7 +60,7 @@ dependencies {
 
     def paging_version = "3.0.0-alpha11"
 
-    implementation "androidx.paging:paging-runtime:$paging_version"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 
     def nav_version = "2.3.2"
 
