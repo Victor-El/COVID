@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.searchView.run {
             visibility = View.GONE
-            setOnQueryTextListener(object: SearchView.OnQueryTextListener {
+            /*setOnQueryTextListener(object: SearchView.OnQueryTextListener {
                 override fun onQueryTextSubmit(query: String?): Boolean {
                     TODO("Not yet implemented")
                 }
@@ -76,7 +76,7 @@ class MainActivity : AppCompatActivity() {
                     TODO("Not yet implemented")
                 }
 
-            })
+            })*/
         }
     }
 

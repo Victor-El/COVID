@@ -19,7 +19,7 @@ class CountriesStatsPagingSource @Inject constructor(
             val prevKey = if (nextPageNumber == 1) null else nextPageNumber - 1
             return LoadResult.Page(
                 countries,
-                nextKey = nextKey,
+                nextKey = null, // don't load next page
                 prevKey = prevKey
             )
         } catch (e: Exception) {
